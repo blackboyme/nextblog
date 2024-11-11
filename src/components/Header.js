@@ -3,13 +3,13 @@
 import React from 'react'
 import Logo from './Logo'
 import Backhome from './BackHome'
-import MenuListTop from './MenuListTop'
-import Link from 'next/link'
+import NavTop from './NavTop'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrain, faLeaf, faHeart, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faTrain } from '@fortawesome/free-solid-svg-icons'
+
 export default function Header() {
     return (
-        <div id="top" className="fixed w-full bg-transparent backdrop-blur-sm z-50">
+        <div id="top" className="fixed w-full bg-transparent z-50">
             <nav
                 id='nav'
                 className='h-16 top-0 w-full duration-300 transition-all text-white'>
@@ -18,17 +18,11 @@ export default function Header() {
                         <Logo />
                         <Backhome />
                     </div>
-                    <div className='flex items-center'>
-                        <FontAwesomeIcon icon={faLeaf} className='text-white w-6 h-6' />
-                        <Link href={'/'}>文章</Link>
-                        <FontAwesomeIcon icon={faHeart} className='text-white w-6 h-6' />
-                        <Link href={'/'}>我的</Link>
-                        <FontAwesomeIcon icon={faPaperPlane} className='text-white w-6 h-6' />
-                        <Link href={'/'}>关于我</Link>
+                    <div className='flex'>
+                        <NavTop />
+                        <NavTop />
+                        <NavTop />
                     </div>
-                    {/* <div>
-                        <MenuListTop />
-                    </div> */}
                     <div className='flex'>
                         <FontAwesomeIcon icon={faTrain} className='text-white w-6 h-6 cursor-pointer' />
                     </div>
