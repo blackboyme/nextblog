@@ -4,8 +4,9 @@ import React from 'react'
 import Logo from './Logo'
 import Backhome from './BackHome'
 import NavTop from './NavTop'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrain, faBars, faDice, faSearch } from '@fortawesome/free-solid-svg-icons'
+import Train from './Train'
+import PhoneBars from './PhoneBars'
+
 
 export default function Header() {
     return (
@@ -18,23 +19,14 @@ export default function Header() {
                         <Logo />
                         <Backhome />
                     </div>
-                    <div className='hidden sm:flex'>
+                    <div className='hidden md:flex'>
                         <NavTop />
                         <NavTop />
                         <NavTop />
                     </div>
                     <div className='flex'>
-                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>
-                            <FontAwesomeIcon icon={faTrain} className='text-black sm:text-white w-5 h-5 cursor-pointer' />
-                        </div>
-                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>
-                            <FontAwesomeIcon icon={faDice} className='text-white w-5 h-5 cursor-pointer' />
-                        </div>
-                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>
-                            <FontAwesomeIcon icon={faSearch} className='text-white w-5 h-5 cursor-pointer' />
-                        </div>
-                        <FontAwesomeIcon icon={faDice} className='text-black w-6 h-6 cursor-pointer sm:hidden mr-2' />
-                        <FontAwesomeIcon icon={faBars} className='text-black w-6 h-6 cursor-pointer sm:hidden' />
+                        <Train />
+                        <PhoneBars />
                     </div>
                 </div>
             </nav>
