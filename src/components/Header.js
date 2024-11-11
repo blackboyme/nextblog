@@ -9,10 +9,10 @@ import { faTrain, faBars, faDice, faSearch } from '@fortawesome/free-solid-svg-i
 
 export default function Header() {
     return (
-        <div id="top" className="fixed w-full bg-transparent z-50">
+        <div id="top" className="fixed w-full bg-white sm:bg-transparent z-50">
             <nav
                 id='nav'
-                className='h-16 top-0 w-full duration-300 transition-all text-white'>
+                className='h-16 top-0 w-full duration-300 transition-all text-black sm:text-white'>
                 <div className='flex h-full items-center justify-between max-w-[86rem] mx-auto px-6'>
                     <div className='flex flex-nowrap items-center cursor-pointer'>
                         <Logo />
@@ -25,7 +25,7 @@ export default function Header() {
                     </div>
                     <div className='flex'>
                         <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>
-                            <FontAwesomeIcon icon={faTrain} className='text-white w-5 h-5 cursor-pointer' />
+                            <FontAwesomeIcon icon={faTrain} className='text-black sm:text-white w-5 h-5 cursor-pointer' />
                         </div>
                         <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>
                             <FontAwesomeIcon icon={faDice} className='text-white w-5 h-5 cursor-pointer' />
@@ -33,7 +33,8 @@ export default function Header() {
                         <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>
                             <FontAwesomeIcon icon={faSearch} className='text-white w-5 h-5 cursor-pointer' />
                         </div>
-                        <FontAwesomeIcon icon={faBars} className='text-white w-6 h-6 cursor-pointer sm:hidden' />
+                        <FontAwesomeIcon icon={faDice} className='text-black w-6 h-6 cursor-pointer sm:hidden mr-2' />
+                        <FontAwesomeIcon icon={faBars} className='text-black w-6 h-6 cursor-pointer sm:hidden' />
                     </div>
                 </div>
             </nav>
