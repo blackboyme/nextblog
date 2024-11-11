@@ -29,7 +29,7 @@ export default function Logo() {
                                     height={24} // h-6 等于 24px
                                     className='ml-2 mr-4 group-hover/today:bg-white group-hover/today:rounded-full'
                                 />
-                                <Link href='/' alt='今日毕' className='group-hover/today:text-white'>今日毕</Link>
+                                <Link href={'https://limengyue.love/todo/'} alt='今日毕' className='group-hover/today:text-white'>今日毕</Link>
                             </div>
                         </div>
                     </div>
