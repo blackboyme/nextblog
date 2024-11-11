@@ -11,7 +11,11 @@ export default function NavTop() {
                 <div style={{ letterSpacing: '0.3em' }}>文章</div>
             </div>
             <div className='absolute w-full h-2 top-full'></div>
-            <div id='childNav' className='hidden group-hover:block absolute top-[calc(100%+8px)] left-1/2 -translate-x-1/2 bg-white rounded-full transition-colors duration-200 p-2 border-[1.5px] border-[#425aef]'>
+            <div id='childNav' 
+                className='absolute top-[calc(100%+8px)] left-1/2 -translate-x-1/2 bg-white rounded-full transition-all duration-300 ease-out p-2 border-[1.5px] border-[#425aef]
+                opacity-0 invisible transform scale-90 translate-y-2 
+                group-hover:opacity-100 group-hover:visible group-hover:scale-100 group-hover:translate-y-0'
+            >
                 <div className='flex flex-row space-x-1'>
                     <div id='navSelect' className='flex hover:bg-[#425aef] px-4 py-2 rounded-full transition-colors duration-200 group/nav cursor-pointer'>
                         <FontAwesomeIcon 
