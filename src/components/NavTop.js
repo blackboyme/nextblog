@@ -7,7 +7,7 @@ export default function NavTop() {
     return (
         <div className='relative group'>
             <div id='navTop' className='flex items-center hover:bg-[#425aef] px-4 py-2 rounded-full transition-colors duration-200 cursor-pointer'>
-                <FontAwesomeIcon icon={faFileLines} className='text-white w-6 h-6 mr-3' />
+                <FontAwesomeIcon icon={faFileLines} className='text-white w-5 h-5 mr-3' />
                 <div style={{ letterSpacing: '0.3em' }}>文章</div>
             </div>
             <div className='absolute w-full h-2 top-full'></div>
@@ -20,7 +20,7 @@ export default function NavTop() {
                     <div id='navSelect' className='flex hover:bg-[#425aef] px-4 py-2 rounded-full transition-colors duration-200 group/nav cursor-pointer'>
                         <FontAwesomeIcon 
                             icon={faFileLines} 
-                            className='text-black w-6 h-6 mr-1 group-hover/nav:text-white transition-colors duration-200' 
+                            className='text-black w-5 h-5 mr-1 group-hover/nav:text-white transition-colors duration-200' 
                         />
                         <Link 
                             id='text-nav' 
@@ -34,7 +34,7 @@ export default function NavTop() {
                     <div id='navSelect' className='flex hover:bg-[#425aef] px-4 py-2 rounded-full transition-colors duration-200 group/nav cursor-pointer'>
                         <FontAwesomeIcon 
                             icon={faFileLines} 
-                            className='text-black w-6 h-6 mr-1 group-hover/nav:text-white transition-colors duration-200' 
+                            className='text-black w-5 h-5 mr-1 group-hover/nav:text-white transition-colors duration-200' 
                         />
                         <Link 
                             id='text-nav' 
@@ -47,7 +47,7 @@ export default function NavTop() {
                     <div id='navSelect' className='flex hover:bg-[#425aef] px-4 py-2 rounded-full transition-colors duration-200 group/nav cursor-pointer'>
                         <FontAwesomeIcon 
                             icon={faFileLines} 
-                            className='text-black w-6 h-6 mr-1 group-hover/nav:text-white transition-colors duration-200' 
+                            className='text-black w-5 h-5 mr-1 group-hover/nav:text-white transition-colors duration-200' 
                         />
                         <Link 
                             id='text-nav' 

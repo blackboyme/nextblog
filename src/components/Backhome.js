@@ -12,7 +12,7 @@ export default function BackHome() {
                         Gmoonlight1
                     </div>
                     <div id='house' className='hidden group-hover:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                        <FontAwesomeIcon icon={faHouse} className='text-white w-6 h-6' />
+                        <FontAwesomeIcon icon={faHouse} className='text-white w-5 h-5' />
                     </div>
                 </div>
             </Link>
