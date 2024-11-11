@@ -24,14 +24,14 @@ export default function Header() {
                         <NavTop />
                     </div>
                     <div className='flex'>
-                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full flex items-center justify-center mr-6'>
-                            <FontAwesomeIcon icon={faTrain} className='text-white w-6 h-6 cursor-pointer hidden sm:block' />
+                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>
+                            <FontAwesomeIcon icon={faTrain} className='text-white w-5 h-5 cursor-pointer' />
                         </div>
-                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full flex items-center justify-center mr-6'>
-                            <FontAwesomeIcon icon={faDice} className='text-white w-6 h-6 cursor-pointer hidden sm:block' />
+                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>
+                            <FontAwesomeIcon icon={faDice} className='text-white w-5 h-5 cursor-pointer' />
                         </div>
-                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full flex items-center justify-center mr-6'>
-                            <FontAwesomeIcon icon={faSearch} className='text-white w-6 h-6 cursor-pointer hidden sm:block' />
+                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>
+                            <FontAwesomeIcon icon={faSearch} className='text-white w-5 h-5 cursor-pointer' />
                         </div>
                         <FontAwesomeIcon icon={faBars} className='text-white w-6 h-6 cursor-pointer sm:hidden' />
                     </div>
