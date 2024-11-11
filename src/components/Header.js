@@ -5,7 +5,7 @@ import Logo from './Logo'
 import Backhome from './BackHome'
 import NavTop from './NavTop'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrain } from '@fortawesome/free-solid-svg-icons'
+import { faTrain, faBars, faDice, faSearch } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
     return (
@@ -18,13 +18,22 @@ export default function Header() {
                         <Logo />
                         <Backhome />
                     </div>
-                    <div className='flex'>
+                    <div className='hidden sm:flex'>
                         <NavTop />
                         <NavTop />
                         <NavTop />
                     </div>
                     <div className='flex'>
-                        <FontAwesomeIcon icon={faTrain} className='text-white w-6 h-6 cursor-pointer' />
+                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full flex items-center justify-center mr-6'>
+                            <FontAwesomeIcon icon={faTrain} className='text-white w-6 h-6 cursor-pointer hidden sm:block' />
+                        </div>
+                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full flex items-center justify-center mr-6'>
+                            <FontAwesomeIcon icon={faDice} className='text-white w-6 h-6 cursor-pointer hidden sm:block' />
+                        </div>
+                        <div className='hover:bg-[#425aef] w-9 h-9 rounded-full flex items-center justify-center mr-6'>
+                            <FontAwesomeIcon icon={faSearch} className='text-white w-6 h-6 cursor-pointer hidden sm:block' />
+                        </div>
+                        <FontAwesomeIcon icon={faBars} className='text-white w-6 h-6 cursor-pointer sm:hidden' />
                     </div>
                 </div>
             </nav>
