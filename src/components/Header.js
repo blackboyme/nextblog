@@ -9,6 +9,62 @@ import MobileBars from './MobileBars'
 
 
 const Header = () => {
+    const navs = [
+        {
+            icon: 'faFileLines',
+            href: '/',
+            name: '文章',
+            links: [{
+                icon: 'faCube',
+                href: '/',
+                name: '隧道'
+            },
+            {
+                icon: 'faShapes',
+                href: '/',
+                name: '分类'
+            },
+            {
+                icon: 'faTags',
+                href: '/',
+                name: '标签'
+            }]
+        },
+        {
+            icon: 'faHeart',
+            href: '/',
+            name: '我的',
+            links: [{
+                icon: 'faMusic',
+                href: '/',
+                name: '音乐馆'
+            },
+            {
+                icon: 'faGamepad',
+                href: '/',
+                name: '追番页'
+            },
+            {
+                icon: 'faImages',
+                href: '/',
+                name: '相册集'
+            }]
+        }, {
+            icon: 'faPaperPlane',
+            href: '/',
+            name: '关于',
+            links: [{
+                icon: 'faPaperPlane',
+                href: '/',
+                name: '关于'
+            },
+            {
+                icon: 'faShoePrints',
+                href: '/',
+                name: '随便逛逛'
+            }]
+        }
+    ]
 
     return (
         <>
@@ -22,9 +78,15 @@ const Header = () => {
                             <Brand />
                         </div>
                         <div className='hidden md:flex'>
-                            <Nav />
-                            <Nav />
-                            <Nav />
+                            {navs.map((linkItem, index) => (
+                                <Nav
+                                    key={index}
+                                    icon={linkItem.icon}
+                                    href={linkItem.href}
+                                    name={linkItem.name}
+                                    links={linkItem.links}
+                                />
+                            ))}
                         </div>
                         <div className='flex w-56'>
                             <Toys />
