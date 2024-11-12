@@ -26,7 +26,7 @@ const Header = () => {
                             <Nav />
                             <Nav />
                         </div>
-                        <div className='flex'>
+                        <div className='flex w-56'>
                             <Toys />
                             <MobileBars />
                         </div>
