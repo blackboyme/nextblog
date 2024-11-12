@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from 'next/font/google'
 import "./globals.css";
 import { config } from '@fortawesome/fontawesome-svg-core'
+import Header from '@/components/Header'
 config.autoAddCss = false  // 防止图标闪烁
 
 
@@ -24,6 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={roboto.className}>
       <body>
+        
+        <Header />
         {children}
       </body>
     </html>

@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrain, faDice, faSearch } from '@fortawesome/free-solid-svg-icons'
 
-export default function Train() {
+export default function Toys() {
     return (
         <>
             <div className='hover:bg-[#425aef] w-9 h-9 rounded-full hidden sm:flex items-center justify-center mr-6'>

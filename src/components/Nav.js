@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 
-export default function NavTop() {
+export default function Nav() {
     return (
         <div className='relative group'>
             <div id='navTop' className='flex items-center hover:bg-[#425aef] px-4 py-2 rounded-full transition-colors duration-200 cursor-pointer'>

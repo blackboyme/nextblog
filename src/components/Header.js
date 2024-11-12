@@ -2,10 +2,10 @@
 
 import React from 'react'
 import Logo from './Logo'
-import Backhome from './BackHome'
-import NavTop from './NavTop'
-import Train from './Train'
-import PhoneBars from './PhoneBars'
+import Brand from './Brand'
+import Nav from './Nav'
+import Toys from './Toys'
+import MobileBars from './MobileBars'
 
 
 export default function Header() {
@@ -17,16 +17,16 @@ export default function Header() {
                 <div className='flex h-full items-center justify-between max-w-[86rem] mx-auto px-6'>
                     <div className='flex flex-nowrap items-center cursor-pointer'>
                         <Logo />
-                        <Backhome />
+                        <Brand />
                     </div>
                     <div className='hidden md:flex'>
-                        <NavTop />
-                        <NavTop />
-                        <NavTop />
+                        <Nav />
+                        <Nav />
+                        <Nav />
                     </div>
                     <div className='flex'>
-                        <Train />
-                        <PhoneBars />
+                        <Toys />
+                        <MobileBars />
                     </div>
                 </div>
             </nav>
