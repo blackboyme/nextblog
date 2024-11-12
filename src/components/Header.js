@@ -12,7 +12,7 @@ const Header = () => {
 
     return (
         <>
-            <div id='wrapper' className="fixed w-full bg-white sm:bg-transparent z-50">
+            <div className="fixed w-full bg-white sm:bg-transparent z-50">
                 <nav
                     id='nav'
                     className='h-16 top-0 w-full duration-300 transition-all text-black sm:text-white'>
