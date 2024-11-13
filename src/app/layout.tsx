@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Roboto } from 'next/font/google'
+import localFont from 'next/font/local'
 import "./globals.css";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import Header from '@/components/Header'
 config.autoAddCss = false  // 防止图标闪烁
 
 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
+const pingfang = localFont({
+  src: '/fonts/PingFangSC-Medium.woff2',
+  display: 'swap',
 })
 
 
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={pingfang.className}>
       <body>   
         <Header />
         {children}
