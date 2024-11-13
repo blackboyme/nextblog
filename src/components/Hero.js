@@ -117,7 +117,7 @@ const Hero = () => {
             </div>
             <div
                 onClick={() => {
-                    const viewportHeight = window.innerHeight;
+                    const viewportHeight = window.innerHeight-64;
                     window.scrollTo({
                         top: viewportHeight,
                         behavior: 'smooth'

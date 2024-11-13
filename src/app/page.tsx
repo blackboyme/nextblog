@@ -5,14 +5,20 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <main id='wrapper'>
-        <div className='h-[100vh] w-full bg-blue-100'>
-          
+      <main id='wrapper' className='w-full  bg-blue-100'>
+        <div className='h-96 max-w-[86rem] flex items-center justify-between mx-auto gap-5 p-6'>
+          <div className='w-[55vw] h-full bg-blue-500 rounded-lg'>
+
+          </div>
+          <div className='w-[45vw] h-full  bg-blue-500 rounded-lg'>
+
+          </div>
+        </div>
+        <div className='h-[100vh] max-w-[86rem] flex items-center justify-between mx-auto gap-5  bg-blue-100'>
+
+
         </div>
       </main>
-      <div className='h-[100vh] w-full bg-blue-500'>
-          
-        </div>
     </div>
   )
 }
