@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image';
 import homeSrc from '/public/bg.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react'
 
 
@@ -124,9 +124,12 @@ const Hero = () => {
                     })
                 }}
                 className='glassmorphism cursor-pointer w-40 text-center pt-4 pb-3 text-md text-white duration-300 rounded-3xl
-                    absolute left-1/2 -translate-x-1/2 bottom-8'
+                    absolute left-1/2 -translate-x-1/2 bottom-3'
             >
-                <FontAwesomeIcon icon={faAngleDoubleDown} className='animate-bounce' />
+                <FontAwesomeIcon 
+                    icon={faAngleDown} 
+                    className='w-6 h-6 animate-fade-down'
+                />
             </div>
         </div>
     )
