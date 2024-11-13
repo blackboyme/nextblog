@@ -98,7 +98,7 @@ const Hero = () => {
         })
     }
     return (
-        <div className="relative w-full h-[100vh]">
+        <div id='hero' className="relative w-full h-[100vh]">
             <div id="homepic" className="absolute inset-0">
                 <Image
                     src={homeSrc}

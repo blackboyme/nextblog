@@ -10,7 +10,7 @@ export default function Logo() {
         <>
             <div className='relative group'>
                 <div className='flex'>
-                    <FontAwesomeIcon icon={faGripVertical} className='text-black sm:text-white p-2 mr-1 w-5 h-5 group-hover:bg-[#425aef] rounded-xl' />
+                    <FontAwesomeIcon icon={faGripVertical} className='text-black p-2 mr-1 w-5 h-5 group-hover:bg-[#425aef] rounded-xl' />
                 </div>
                 <div className='absolute w-full h-4  left-0 top-full'></div>
                 <div id='navbar' className='absolute group/title text-gray-500 top-full mt-4 rounded-xl w-[calc(100vw-3rem)] sm:w-80 h-[100px] bg-white hover:border-[#425aef] border-[1px] border-transparent

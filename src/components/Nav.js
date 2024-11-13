@@ -8,9 +8,9 @@ const Nav = (props) => {
     const { icon, href, name,links } = props
     const far = solidIcons[icon]
     return (
-        <div className='relative group'>
-            <div id='navTop' className='flex items-center hover:bg-[#425aef] px-4 py-2 rounded-full transition-colors duration-200 cursor-pointer'>
-                <FontAwesomeIcon icon={far} className='text-white w-5 h-5 mr-3' />
+        <div className='relative group '>
+            <div className='flex items-center hover:bg-[#425aef] px-4 py-2 rounded-full transition-colors duration-200 cursor-pointer'>
+                <FontAwesomeIcon id='nav' icon={far} className='text-black w-5 h-5 mr-3' />
                 <div style={{ letterSpacing: '0.3em' }}>{name}</div>
             </div>
             <div className='absolute w-full h-2 top-full'></div>
