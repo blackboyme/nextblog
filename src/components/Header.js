@@ -9,6 +9,8 @@ import MobileBars from './MobileBars'
 import throttle from 'lodash.throttle'
 import { useCallback, useEffect } from 'react'
 
+let windowTop = 0
+
 const Header = () => {
     const navs = [
         {
@@ -72,21 +74,36 @@ const Header = () => {
         throttle(() => {
             const scrollS = window.scrollY
             const nav = document.querySelector('#nav')
+            const navIcons = document.querySelectorAll('#navIcon')
             const header = document.querySelector('#hero')
-            
-            const scrollInHeader = header && (scrollS < 10 || scrollS < header?.clientHeight - 50)
+            const navNames = document.querySelectorAll('#navName')
 
-            console.log('scrollInHeader',scrollInHeader)
-            console.log('nav',nav)
-            console.log('scrollS',scrollS)
-            console.log('header?.clientHeight - 50:',header?.clientHeight)
+            const scrollInHeader = header && (scrollS < 50)
+
+            console.log('scrollInHeader', scrollInHeader)
+            console.log('nav', nav)
+            console.log('scrollS', scrollS)
+            console.log('header?.clientHeight - 50:', header?.clientHeight)
             if (scrollInHeader) {
                 nav && nav.classList.replace('bg-white', 'sm:bg-transparent')
                 nav && nav.classList.replace('text-black', 'sm:text-white')
+                navIcons.forEach(icon => {
+                    icon.classList.replace('text-black', 'sm:text-white')
+                })
+                navNames.forEach(name => {
+                    name.classList.replace('text-black', 'sm:text-white')
+                })
             } else {
                 nav && nav.classList.replace('sm:bg-transparent', 'bg-white')
                 nav && nav.classList.replace('sm:text-white', 'text-black')
+                navIcons.forEach(icon => {
+                    icon.classList.replace('sm:text-white', 'text-black')
+                })
+                navNames.forEach(name => {
+                    name.classList.replace('sm:text-white', 'text-black')
+                })
             }
+
         }, throttleMs)
         , [])
 
