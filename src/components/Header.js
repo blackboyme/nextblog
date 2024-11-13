@@ -7,11 +7,10 @@ import Nav from './Nav'
 import Toys from './Toys'
 import MobileBars from './MobileBars'
 import throttle from 'lodash.throttle'
-import { useCallback, useEffect } from 'react'
-
-let windowTop = 0
+import { useCallback, useEffect, useRef } from 'react'
 
 const Header = () => {
+    const lastScrollY = useRef(0)
     const navs = [
         {
             icon: 'faFileLines',
@@ -72,18 +71,16 @@ const Header = () => {
     const throttleMs = 200
     const topNavStyleHandler = useCallback(
         throttle(() => {
-            const scrollS = window.scrollY
+            const scrollY = window.scrollY
             const nav = document.querySelector('#nav')
+            const navContainer = document.querySelector('#navContainer')
             const navIcons = document.querySelectorAll('#navIcon')
             const header = document.querySelector('#hero')
             const navNames = document.querySelectorAll('#navName')
 
-            const scrollInHeader = header && (scrollS < 50)
+            const scrollInHeader = header && (scrollY < 50)
+            const isScrollingDown = scrollY > lastScrollY.current && scrollY > 100
 
-            console.log('scrollInHeader', scrollInHeader)
-            console.log('nav', nav)
-            console.log('scrollS', scrollS)
-            console.log('header?.clientHeight - 50:', header?.clientHeight)
             if (scrollInHeader) {
                 nav && nav.classList.replace('bg-white', 'sm:bg-transparent')
                 nav && nav.classList.replace('text-black', 'sm:text-white')
@@ -104,6 +101,15 @@ const Header = () => {
                 })
             }
 
+            if (isScrollingDown) {
+                navContainer?.classList.add('-translate-y-full', 'opacity-0')
+                navContainer?.classList.remove('translate-y-0', 'opacity-100')
+            } else {
+                navContainer?.classList.remove('-translate-y-full', 'opacity-0')
+                navContainer?.classList.add('translate-y-0', 'opacity-100')
+            }
+
+            lastScrollY.current = scrollY
         }, throttleMs)
         , [])
 
@@ -116,16 +122,16 @@ const Header = () => {
     }, [topNavStyleHandler])
 
     return (
-        <div className="fixed w-full  z-50">
+        <div className="fixed w-full z-50">
             <nav
                 id='nav'
-                className='h-16 top-0 w-full duration-300 transition-all bg-white text-black'>
+                className='h-16 w-full duration-300 transition-all bg-white text-black'>
                 <div className='flex h-full items-center justify-between max-w-[86rem] mx-auto px-6'>
                     <div className='flex flex-nowrap items-center cursor-pointer'>
                         <Logo />
                         <Brand />
                     </div>
-                    <div className='hidden md:flex'>
+                    <div id='navContainer' className='hidden md:flex transition-all duration-300 transform translate-y-0 opacity-100'>
                         {navs.map((linkItem, index) => (
                             <Nav
                                 key={index}
