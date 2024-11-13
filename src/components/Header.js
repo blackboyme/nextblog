@@ -9,7 +9,8 @@ import MobileBars from './MobileBars'
 import throttle from 'lodash.throttle'
 import { useCallback, useEffect, useRef } from 'react'
 
-const Header = () => {
+const Header = (props) => {
+    const { navTitle } = props
     const lastScrollY = useRef(0)
     const navs = [
         {
@@ -151,7 +152,7 @@ const Header = () => {
                         className='absolute left-1/2 -translate-x-1/2 translate-y-100 opacity-0 text-black transition-all duration-300'
                         style={{ letterSpacing: '0.1em' }}
                     >
-                        gmoonlight1-幸好你也喜欢秋天
+                        {navTitle}
                     </div>
                     <div className='flex w-56'>
                         <Toys />

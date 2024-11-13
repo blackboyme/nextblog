@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={pingfang.className}>
       <body>   
-        <Header />
+        <Header navTitle={metadata.title} />
         {children}
       </body>
     </html>
