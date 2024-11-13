@@ -108,7 +108,7 @@ const Hero = () => {
                 />
             </div>
             <div className="absolute inset-0 flex flex-col items-center justify-center -mt-14">
-                <div className='  text-white text-5xl font-bold'>
+                <div className='  text-white text-5xl'>
                     Gmoonlight1
                 </div>
                 <div className='  text-white text-3xl mt-3 h-12'>
