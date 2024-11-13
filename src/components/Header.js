@@ -77,6 +77,7 @@ const Header = () => {
             const navIcons = document.querySelectorAll('#navIcon')
             const header = document.querySelector('#hero')
             const navNames = document.querySelectorAll('#navName')
+            const navTitle = document.querySelector('#navTitle')
 
             const scrollInHeader = header && (scrollY < 50)
             const isScrollingDown = scrollY > lastScrollY.current && scrollY > 100
@@ -104,9 +105,13 @@ const Header = () => {
             if (isScrollingDown) {
                 navContainer?.classList.add('-translate-y-full', 'opacity-0')
                 navContainer?.classList.remove('translate-y-0', 'opacity-100')
+                navTitle?.classList.remove('-translate-y-full', 'opacity-0')
+                navTitle?.classList.add('translate-y-0', 'opacity-100')
             } else {
                 navContainer?.classList.remove('-translate-y-full', 'opacity-0')
                 navContainer?.classList.add('translate-y-0', 'opacity-100')
+                navTitle?.classList.add('-translate-y-full', 'opacity-0')
+                navTitle?.classList.remove('translate-y-0', 'opacity-100')
             }
 
             lastScrollY.current = scrollY
@@ -141,6 +146,12 @@ const Header = () => {
                                 links={linkItem.links}
                             />
                         ))}
+                    </div>
+                    <div id='navTitle' 
+                        className='absolute left-1/2 -translate-x-1/2 translate-y-100 opacity-0 text-black transition-all duration-300'
+                        style={{ letterSpacing: '0.1em' }}
+                    >
+                        gmoonlight1-幸好你也喜欢秋天
                     </div>
                     <div className='flex w-56'>
                         <Toys />
