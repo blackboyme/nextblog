@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 'use client'
 
 import React from 'react'
@@ -40,7 +41,7 @@ const Header = (props) => {
             links: [{
                 icon: 'faMusic',
                 href: '/',
-                name: '音乐馆'
+                name: '音乐���'
             },
             {
                 icon: 'faGamepad',
@@ -149,12 +150,11 @@ const Header = (props) => {
                         ))}
                     </div>
                     <div id='navTitle' 
-                        className='absolute left-1/2 -translate-x-1/2 translate-y-100 opacity-0 text-black transition-all duration-300'
-                        style={{ letterSpacing: '0.1em' }}
+                        className='absolute left-1/2 -translate-x-1/2 translate-y-100 opacity-0 text-black transition-all duration-300 hidden sm:block'
                     >
                         {navTitle}
                     </div>
-                    <div className='flex w-56'>
+                    <div className='flex'>
                         <Toys />
                         <MobileBars />
                     </div>
