@@ -1,5 +1,7 @@
+"use client"
 import React from 'react'
 import Hero from '@/components/Hero'
+
 
 export default function Home() {
   return (
@@ -13,10 +15,6 @@ export default function Home() {
           <div className='w-[45vw] h-full  bg-blue-500 rounded-lg'>
 
           </div>
-        </div>
-        <div className='h-[100vh] max-w-[86rem] flex items-center justify-between mx-auto gap-5  bg-blue-100'>
-
-
         </div>
       </main>
     </div>

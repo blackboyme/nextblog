@@ -1,11 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as solidIcons from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
 import NavItem from '@/components/NavItem'
 
 const Nav = (props) => {
-    const { icon, href, name, links } = props
+    const { icon, name, links } = props
     const far = solidIcons[icon]
     return (
         <div className='relative group'>
