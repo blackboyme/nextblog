@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Hero from '@/components/Hero'
+import {Button} from "@nextui-org/react";
 
 
 export default function Home() {
@@ -16,6 +17,9 @@ export default function Home() {
 
           </div>
         </div>
+        <Button color="primary">
+      Button
+    </Button>
       </main>
     </div>
   )

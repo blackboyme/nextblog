@@ -1,17 +1,27 @@
-import {nextui} from '@nextui-org/theme'
+import { nextui } from '@nextui-org/react'
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)"],
-        mono: ["var(--font-mono)"],
+      animation: {
+        'fade-down': 'fade-down 2s infinite ease-in-out',
+      },
+      keyframes: {
+        'fade-down': {
+          '0%, 100%': {
+            transform: 'translateY(-25%)',
+            opacity: '1'
+          },
+          '50%': {
+            transform: 'translateY(25%)',
+            opacity: '0.2'
+          },
+        },
       },
     },
   },

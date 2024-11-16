@@ -1,26 +1,27 @@
 @import '@fortawesome/fontawesome-svg-core/styles.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
+/* 只保留必要的自定义样式 */
 body {
-    background-color: #f7f9fe;
-    overflow-x: hidden;
+  background-color: #f7f9fe;
+  overflow-x: hidden;
 }
 
+/* 自定义动画 */
 @keyframes fade-down {
-    0%, 100% {
-        transform: translateY(-25%);
-        opacity: 0.7;
-    }
-    50% {
-        transform: translateY(25%);
-        opacity: 0.3;
-    }
+  0%, 100% {
+    transform: translateY(-25%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(25%);
+    opacity: 0.2;
+  }
 }
 
 .animate-fade-down {
-    animation: fade-down 2s infinite ease-in-out;
+  animation: fade-down 2s infinite ease-in-out;
 }
