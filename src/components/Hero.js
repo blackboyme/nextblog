@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Image from 'next/image';
-import homeSrc from '/public/bg.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react'
@@ -101,7 +100,7 @@ const Hero = () => {
         <div id='hero' className="relative w-full h-[100vh]">
             <div id="homepic" className="absolute inset-0">
                 <Image
-                    src={homeSrc}
+                    src='/bg.jpg'
                     fill
                     alt="header background"
                     className="w-full h-full object-cover object-center"
