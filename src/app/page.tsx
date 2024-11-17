@@ -17,9 +17,6 @@ export default function Home() {
 
           </div>
         </div>
-        <Button color="primary">
-      Button
-    </Button>
       </main>
     </div>
   )
