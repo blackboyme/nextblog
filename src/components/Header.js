@@ -132,8 +132,8 @@ const Header = (props) => {
         <div className="fixed w-full z-50">
             <nav
                 id='nav'
-                className='h-16 w-full duration-300 transition-all bg-white text-black'>
-                <div className='flex h-full items-center justify-between max-w-[86rem] mx-auto px-6'>
+                className='h-16 w-full duration-300 transition-all bg-white text-black dark:bg-white'>
+                <div className='flex h-full items-center justify-between container mx-auto px-6'>
                     <div className='flex flex-nowrap items-center cursor-pointer'>
                         <Logo />
                         <Brand />
