@@ -11,17 +11,92 @@ body {
 }
 
 /* 自定义动画 */
-@keyframes fade-down {
-  0%, 100% {
-    transform: translateY(-25%);
-    opacity: 1;
+@keyframes elastic-stretch {
+  0% {
+    flex-grow: 1;
+    transform: scale(1);
   }
-  50% {
-    transform: translateY(25%);
-    opacity: 0.2;
+  45% {
+    flex-grow: 1.25;   /* 平滑增长 */
+    transform: scale(1);
+  }
+  75% {
+    flex-grow: 1.33;   /* 明显的过冲 */
+    transform: scale(1.008);
+  }
+  85% {
+    flex-grow: 1.28;   /* 可见的回弹 */
+    transform: scale(0.995);
+  }
+  92% {
+    flex-grow: 1.31;   /* 二次小过冲 */
+    transform: scale(1.003);
+  }
+  100% {
+    flex-grow: 1.3;    /* 最终值 */
+    transform: scale(1);
   }
 }
 
-.animate-fade-down {
-  animation: fade-down 2s infinite ease-in-out;
+.hover-elastic {
+  will-change: flex-grow, transform;
+  transition: all 0.4s ease-out;
 }
+
+.hover-elastic:hover {
+  animation: elastic-stretch 1s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+@keyframes slideAlongLine {
+  0%, 5% {
+    transform: translate(calc(100% + 0px), -20px) rotate(-27deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(100% - 450px), 250px) rotate(-27deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slideAlongLine2 {
+  0%, 5% {
+    transform: translate(calc(100% + 0px), -20px) rotate(-27deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(100% - 450px), 250px) rotate(-27deg);
+    opacity: 1;
+  }
+}
+
+.slide-box {
+  animation: slideAlongLine 4.2s linear infinite;
+  opacity: 0;
+}
+
+.slide-box-2 {
+  animation: slideAlongLine2 4.2s linear infinite;
+  opacity: 0;
+}
+
+/* 第一组方框的延迟 */
+.slide-box-1 { animation-delay: 0s; }
+.slide-box-2 { animation-delay: 0.7s; }
+.slide-box-3 { animation-delay: 1.4s; }
+.slide-box-4 { animation-delay: 2.1s; }
+.slide-box-5 { animation-delay: 2.8s; }
+.slide-box-6 { animation-delay: 3.5s; }
+
+/* 第二组方框的延迟 */
+.slide-box2-1 { animation-delay: 0.35s; }
+.slide-box2-2 { animation-delay: 1.05s; }
+.slide-box2-3 { animation-delay: 1.75s; }
+.slide-box2-4 { animation-delay: 2.45s; }
+.slide-box2-5 { animation-delay: 3.15s; }
+.slide-box2-6 { animation-delay: 3.85s; }
