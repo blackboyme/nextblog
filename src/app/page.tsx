@@ -30,8 +30,9 @@ export default function Home() {
       <main id="wrapper" className="w-full bg-blue-100">
         <div className="container min-h-96 mx-auto flex justify-center gap-5 p-6">
           <section className="flex flex-col flex-[0.55] gap-4">
-            <div id='face' className="flex-[0.7] group bg-white hover:bg-purple-400 rounded-lg relative overflow-hidden">
-              <div className="absolute inset-0 z-0">
+            <div id='face' className="flex-[0.7] group bg-white rounded-lg relative overflow-hidden">
+              <div className="absolute inset-0 z-30 transition-all duration-300 group-hover:backdrop-blur-sm group-hover:bg-purple-400/80" />
+              <div className="absolute inset-0 z-20">
                 <div className="absolute top-0 right-0 w-full h-full">
                   <div className="relative w-full h-full">
                     {/* 第一组方框 */}
@@ -68,12 +69,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div id='face1' className="relative z-10 p-10 group-hover:opacity-0 transition-opacity duration-100">
+              <div id='face1' className="relative z-40 p-10 group-hover:opacity-0 transition-opacity duration-100">
                 <div className="text-4xl text-gray-800"><span>以温柔之心，</span></div>
                 <div className="text-4xl text-gray-800"><span>守护真爱之人</span></div>
                 <div className="text-sm text-gray-500 mt-1"><span>limengyue.love</span></div>
               </div>
-              <div id='face2' className="absolute inset-0 z-10 p-10 opacity-0 group-hover:opacity-100 transition-opacity duration-100">
+              <div id='face2' className="absolute inset-0 z-40 p-10 opacity-0 group-hover:opacity-100 transition-opacity duration-100">
                 <div>
                   <FontAwesomeIcon
                     icon={faPaperPlane}
@@ -81,7 +82,7 @@ export default function Home() {
                     size="5x"
                   />
                 </div>
-                <div className="pt-2 text-white items-center">
+                <div className="pt-2 text-white flex items-center justify-start">
                   <span className="text-5xl mr-3">随便逛逛</span>
                   <FontAwesomeIcon
                     icon={faArrowRight}
