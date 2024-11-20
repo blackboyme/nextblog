@@ -3,7 +3,7 @@ import React from "react";
 import Hero from "@/components/Hero";
 import { Button } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane,faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const boxesGroupOne = [
@@ -23,6 +23,12 @@ export default function Home() {
     { bg: "bg-rose-500", letter: "B", delay: "slide-box2-5" },
     { bg: "bg-cyan-500", letter: "Y", delay: "slide-box2-6" }
   ];
+
+  const square = [
+    { bg: "bg-blue-500", text: "日落", trans: "sun" },
+    { bg: "bg-orange-500", text: "瞬间", trans: "memo" },
+    { bg: "bg-green-500", text: "生活", trans: "life" },
+  ]
 
   return (
     <div>
@@ -50,7 +56,7 @@ export default function Home() {
                         </span>
                       </div>
                     ))}
-                    
+
                     {/* 第二组方框 */}
                     {boxesGroupTwo.map((box, index) => (
                       <div
@@ -93,19 +99,22 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-[0.3] gap-4">
-              {[
-                { bg: "bg-blue-500" },
-                { bg: "bg-orange-500" },
-                { bg: "bg-green-500" },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className={`flex-1 ${item.bg} rounded-lg hover-elastic`}
-                />
-              ))}
+              {
+                square.map((item, index) => (
+                  <div
+                    key={index}
+                    className={`flex-1 ${item.bg} rounded-lg hover-elastic flex flex-col justify-center pl-4`}
+                  >
+                    <div className="text-white text-xl">{item.text}</div>
+                    <div className="text-gray-300 text-sm ">{item.trans}</div>
+                  </div>
+                ))}
             </div>
           </section>
-          <section className="flex-[0.45] bg-white rounded-lg" />
+          <section className="flex-[0.45] bg-white rounded-lg" >
+            {/* <img src="/bg.jpg" alt="bu" className="h-100">
+            </img> */}
+            </section>
         </div>
       </main>
     </div>
