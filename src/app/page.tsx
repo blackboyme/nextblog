@@ -7,21 +7,21 @@ import { faPaperPlane,faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const boxesGroupOne = [
-    { bg: "bg-red-500", letter: "L", delay: "slide-box-1" },
-    { bg: "bg-orange-400", letter: "O", delay: "slide-box-2" },
-    { bg: "bg-white", letter: "V", delay: "slide-box-3" },
-    { bg: "bg-blue-400", letter: "E", delay: "slide-box-4" },
-    { bg: "bg-green-500", letter: "I", delay: "slide-box-5" },
+    { bg: "bg-red-500", letter: "I", delay: "slide-box-1" },
+    { bg: "bg-orange-400", letter: "L", delay: "slide-box-2" },
+    { bg: "bg-white", letter: "O", delay: "slide-box-3" },
+    { bg: "bg-blue-400", letter: "V", delay: "slide-box-4" },
+    { bg: "bg-green-500", letter: "E", delay: "slide-box-5" },
     { bg: "bg-purple-500", letter: "U", delay: "slide-box-6" }
   ];
 
   const boxesGroupTwo = [
     { bg: "bg-pink-500", letter: "M", delay: "slide-box2-1" },
     { bg: "bg-yellow-400", letter: "Y", delay: "slide-box2-2" },
-    { bg: "bg-teal-500", letter: "T", delay: "slide-box2-3" },
-    { bg: "bg-indigo-400", letter: "P", delay: "slide-box2-4" },
-    { bg: "bg-rose-500", letter: "Q", delay: "slide-box2-5" },
-    { bg: "bg-cyan-500", letter: "W", delay: "slide-box2-6" }
+    { bg: "bg-teal-500", letter: "B", delay: "slide-box2-3" },
+    { bg: "bg-indigo-400", letter: "A", delay: "slide-box2-4" },
+    { bg: "bg-rose-500", letter: "B", delay: "slide-box2-5" },
+    { bg: "bg-cyan-500", letter: "Y", delay: "slide-box2-6" }
   ];
 
   return (
