@@ -41,7 +41,7 @@ const Header = (props) => {
             links: [{
                 icon: 'faMusic',
                 href: '/',
-                name: '音乐���'
+                name: '音乐'
             },
             {
                 icon: 'faGamepad',

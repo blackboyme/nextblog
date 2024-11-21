@@ -23,6 +23,15 @@ export default function Home() {
                   <div>
                     恋爱
                   </div>
+                  <div>
+                    回忆
+                  </div>
+                  <div>
+                    &gt;&gt;
+                  </div>
+                  <div>
+                    更多
+                  </div>
               </div>
               <div className="bg-green-100 h-full">
 
