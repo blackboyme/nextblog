@@ -2,6 +2,7 @@
 import React from "react";
 import Hero from "@/components/Hero";
 import Banner from "@/components/Banner"
+import NavTop from "@/components/NavTop"
 
 export default function Home() {
 
@@ -13,32 +14,33 @@ export default function Home() {
         <Banner />
         <div className="container mx-auto w-full flex">
           <section className="flex flex-col flex-[0.75] ">
-              <div className="flex justify-start items-center gap-4 bg-white border-gray-500  h-20 rounded-lg p-3">
-                  <div className="p-2 bg-blue-500 rounded-lg text-white">
-                    首页
+            <NavTop />
+            <div className="w-full mt-6">
+              <div className="flex gap-6">
+                <div className="h-[400px] w-full">
+                  <div className="h-[250px] ">
+                    <img src="/paper.png" alt="cesd" className="object-cover object-center h-full w-full rounded-tl-lg rounded-tr-lg" />
                   </div>
-                  <div>
-                    感情
+                  <div className="h-[150px]  bg-white rounded-bl-lg rounded-br-lg"></div>
+                </div>
+                <div className="h-[400px] w-full">
+                  <div className="h-[250px]  ">
+                    <img src="/paper.png" alt="cesd" className="object-cover object-center h-full w-full rounded-tl-lg rounded-tr-lg" />
                   </div>
-                  <div>
-                    恋爱
+                  <div className="h-[150px]  bg-white rounded-bl-lg rounded-br-lg p-6">
+                    <div className="flex text-gray-500 justify-start gap-2 text-[12px]">
+                      <span>回忆</span>
+                      <span>未读</span>
+                    </div>
+                    <div className="text-black text-xl mt-1">和你一起把无聊的生活过得有趣</div>
+                    <div className="relative flex-1 bottom-0">#想你</div>
                   </div>
-                  <div>
-                    回忆
-                  </div>
-                  <div>
-                    &gt;&gt;
-                  </div>
-                  <div>
-                    更多
-                  </div>
+                </div>
               </div>
-              <div className="bg-green-100 h-full">
-
-              </div>
+            </div>
           </section>
           <section>
-            
+
           </section>
         </div>
       </main>
