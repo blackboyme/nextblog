@@ -27,7 +27,7 @@ export default function Banner() {
         { bg: "bg-green-500", text: "生活", trans: "life" },
     ]
     return (
-        <div className="container h-96 mx-auto flex justify-center gap-5 py-6">
+        <div className="container h-96 mx-auto flex flex-col sm:flex-row justify-center gap-5 py-6">
             <section className="flex flex-col flex-[0.55] gap-4">
                 <div id='face' className="flex-[0.7] group bg-white rounded-lg relative overflow-hidden">
                     <div className="absolute inset-0 z-30 transition-all duration-300 group-hover:backdrop-blur-sm group-hover:bg-purple-400/80" />
