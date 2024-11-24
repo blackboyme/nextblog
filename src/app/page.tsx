@@ -5,7 +5,7 @@ import Banner from "@/components/Banner";
 import NavTop from "@/components/NavTop";
 import ArticleList from "@/components/ArticleList";
 import Social from "@/components/Social";
-
+import Runtime from "@/components/Runtime";
 export default function Home() {
   return (
     <div>
@@ -22,6 +22,7 @@ export default function Home() {
           </section>
         </div>
         <Social />
+        <Runtime />
       </main>
     </div>
   );
