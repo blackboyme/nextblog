@@ -29,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={pingfang.className}>
-      <body>
+    <html lang="zh" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <Providers>
           <Header navTitle={metadata.title}  />
           {children}

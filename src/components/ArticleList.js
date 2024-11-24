@@ -11,7 +11,7 @@ export default function ArticleList() {
                 <Article />
                 <Article />
             </div>
-            <Pagination showControls variant="flat" color="success" total={10} initialPage={1} className="flex justify-center my-4" />
+            <Pagination showControls variant="flat" total={10} initialPage={1} className="flex justify-center my-4" />
         </div>
     )
 }

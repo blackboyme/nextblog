@@ -22,7 +22,7 @@ export default function Banner() {
     ];
 
     const square = [
-        { bg: "bg-blue-500", text: "日落", trans: "sun" },
+        { bg: "bg-[#5268F0]", text: "日落", trans: "sun" },
         { bg: "bg-orange-500", text: "瞬间", trans: "memo" },
         { bg: "bg-green-500", text: "生活", trans: "life" },
     ]

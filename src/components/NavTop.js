@@ -3,7 +3,7 @@ import React from 'react'
 export default function NavTop() {
     return (
         <div className="flex justify-start items-center gap-4 bg-white border-gray-500  h-20 rounded-lg p-3">
-            <div className="p-2 bg-blue-500 rounded-lg text-white">
+            <div className="p-2 bg-[#5268F0] rounded-lg text-white">
                 首页
             </div>
             <div>

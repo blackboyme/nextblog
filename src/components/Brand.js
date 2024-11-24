@@ -7,7 +7,7 @@ export default function Brand() {
     return (
         <>
             <Link href="/" passHref legacyBehavior>
-                <div className='relative group w-50 hover:bg-blue-500 rounded-full px-2 py-1'>
+                <div className='relative group w-50 hover:bg-[#5268F0] rounded-full px-2 py-1'>
                     <div className='text-xl group-hover:opacity-0'>
                         Gmoonlight1
                     </div>
