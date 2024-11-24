@@ -1,14 +1,23 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faBilibili, faGithub, faWeibo } from '@fortawesome/free-brands-svg-icons'
 export default function Social() {
   return (
-    <div className='flex gap-4'>
-        <FontAwesomeIcon icon={faEnvelope} />
-        <FontAwesomeIcon icon={faTwitter} />
-        <FontAwesomeIcon icon={faInstagram} />
+    <div className='flex gap-4 justify-center items-center'>
+      <div className='bg-gray-800 w-9 h-9 rounded-full flex items-center justify-center mr-6'>
+        <FontAwesomeIcon icon={faEnvelope} className='text-white w-5 h-5 cursor-pointer' />
+      </div>
+      <div className='bg-gray-800 w-9 h-9 rounded-full flex items-center justify-center mr-6'>
+        <FontAwesomeIcon icon={faWeibo} className='text-white w-5 h-5 cursor-pointer' />
+      </div>
+      <img src='/okgirl.png' alt='184064199' className='w-14 h-14'></img>
+      <div className='bg-gray-800 w-9 h-9 rounded-full flex items-center justify-center mr-6'>
+        <FontAwesomeIcon icon={faBilibili} className='text-white w-5 h-5 cursor-pointer' />
+      </div>
+      <div className='bg-gray-800 w-9 h-9 rounded-full flex items-center justify-center mr-6'>
+        <FontAwesomeIcon icon={faGithub} className='text-white w-5 h-5 cursor-pointer' />
+      </div>
     </div>
   )
 }

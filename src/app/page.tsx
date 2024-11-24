@@ -16,10 +16,12 @@ export default function Home() {
           <section className="flex flex-col w-full lg:flex-[0.75] ">
             <NavTop />
             <ArticleList />
-            <Social />
           </section>
-          <section></section>
+          <section className="flex-[0.25]">
+
+          </section>
         </div>
+        <Social />
       </main>
     </div>
   );
