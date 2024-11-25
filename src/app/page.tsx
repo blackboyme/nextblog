@@ -16,11 +16,11 @@ export default function Home() {
         <Banner />
         <div className="container mx-auto w-full flex mt-24 sm:mt-0">
           <div className="flex w-full justify-between gap-6">
-            <section className="flex flex-col w-full lg:flex-[0.8] ">
+            <section className="flex flex-col w-full ">
               <NavTop />
               <ArticleList />
             </section>
-            <section className="hidden w-full lg:flex lg:flex-[0.2]">
+            <section className="hidden w-[300px] lg:flex ">
               <PesonalInfo />
             </section>
           </div>

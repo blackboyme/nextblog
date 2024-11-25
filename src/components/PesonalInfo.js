@@ -17,12 +17,12 @@ export default function PesonalInfo() {
                         <img src='/okgirl.png' alt='184064199' className='w-32 h-32 rounded-full'></img>
                     </div>
                 </div>
-                <div className='absolute top-[112px] left-[180px] flex items-center justify-center bg-white w-8 h-8 rounded-full'>
+                <div className='absolute top-[112px] left-[156px] flex items-center justify-center bg-white w-8 h-8 rounded-full'>
                     <img src='/bilismile.gif' alt='184064199' className='w-6 h-6 rounded-full'></img>
                 </div>
             </div>
             <div className=' flex items-center justify-between w-full p-6'>
-                <div className=''>
+                <div className='pr-2'>
                     <div className='text-white text-xl'>
                         Gmoonlight1
                     </div>
