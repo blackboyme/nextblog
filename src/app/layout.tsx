@@ -7,6 +7,7 @@ import Header from '@/components/Header'
 import { Providers } from "./providers"
 import Social from "@/components/Social";
 import Runtime from "@/components/Runtime";
+import Footer from "@/components/Footer";
 
 config.autoAddCss = false  // 防止图标闪烁
 
@@ -38,6 +39,7 @@ export default function RootLayout({
           {children}
           <Social />
           <Runtime />
+          <Footer />
         </Providers>
       </body>
     </html>
