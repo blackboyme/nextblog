@@ -5,6 +5,8 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import Header from '@/components/Header'
 import { Providers } from "./providers"
+import Social from "@/components/Social";
+import Runtime from "@/components/Runtime";
 
 config.autoAddCss = false  // 防止图标闪烁
 
@@ -34,6 +36,8 @@ export default function RootLayout({
         <Providers>
           <Header navTitle={metadata.title}  />
           {children}
+          <Social />
+          <Runtime />
         </Providers>
       </body>
     </html>

@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faBilibili, faGithub, faWeibo } from '@fortawesome/free-brands-svg-icons'
 export default function Social() {
   return (
-    <div className='flex gap-4 justify-center items-center'>
+    <div className='flex gap-4 justify-center items-center bg-blue-100'>
       <div className='bg-gray-800 w-9 h-9 rounded-full flex items-center justify-center mr-6'>
         <FontAwesomeIcon icon={faEnvelope} className='text-white w-5 h-5 cursor-pointer' />
       </div>

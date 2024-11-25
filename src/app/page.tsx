@@ -4,9 +4,9 @@ import Hero from "@/components/Hero";
 import Banner from "@/components/Banner";
 import NavTop from "@/components/NavTop";
 import ArticleList from "@/components/ArticleList";
-import Social from "@/components/Social";
-import Runtime from "@/components/Runtime";
+
 import PesonalInfo from "@/components/PesonalInfo";
+import Announcement from "@/components/Announcement";
 
 export default function Home() {
   return (
@@ -20,13 +20,12 @@ export default function Home() {
               <NavTop />
               <ArticleList />
             </section>
-            <section className="hidden w-[300px] lg:flex ">
+            <section className="hidden w-[300px] lg:flex flex-col">
               <PesonalInfo />
+              <Announcement />
             </section>
           </div>
         </div>
-        <Social />
-        <Runtime />
       </main>
     </div>
   );
